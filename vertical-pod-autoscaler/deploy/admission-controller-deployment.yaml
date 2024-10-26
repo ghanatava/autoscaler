@@ -20,7 +20,7 @@ spec:
         runAsUser: 65534 # nobody
       containers:
         - name: admission-controller
-          image: registry.k8s.io/autoscaling/vpa-admission-controller:1.2.1
+          image: stdevacr01.azurecr.io/vpa-admission-controller:inplace
           imagePullPolicy: Always
           env:
             - name: NAMESPACE
